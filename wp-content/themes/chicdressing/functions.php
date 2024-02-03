@@ -10,7 +10,7 @@ add_filter( 'big_image_size_threshold', '__return_false' );
 
 /* NF : décharger le script du thème parent : désactiver les fonts du thème parent */
 
-function dequeue_ashe_fonts() {
+function remove_ashe_fonts() {
     /*fonction wp_dequeue_style utilisée pour retirer une feuille de style 
     précédemment ajoutée avec la fonction wp_enqueue_style.*/
     wp_dequeue_style('ashe-playfair-font');
@@ -27,7 +27,7 @@ function dequeue_ashe_fonts() {
 
 }
 
-add_action('wp_enqueue_scripts', 'dequeue_ashe_fonts', 999);
+add_action('wp_enqueue_scripts', 'remove_ashe_fonts', 999);
  /*pas de priorité spécifiée dans le code du thème parent, 
  donc utilisation d'une valeur élévée pour la priorité 
  pour être sûr que l'action s'exécute après celle du thème parent */
@@ -39,4 +39,17 @@ add_filter( 'upload_mimes', 'capitaine_mime_types' );
 add_filter( 'wp_check_filetype_and_ext', 'capitaine_file_types', 10, 4 );
 
 // Autoriser l'import des fichiers SVG et WEBP
-function capitaine_mim
+function capitaine_mime_types( $mimes ){
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['webp'] = 'image/webp';
+    return $mimes;
+}
+
+// Contrôle de l'import d'un WEBP
+function capitaine_file_types( $types, $file, $filename, $mimes ) {
+	if ( false !== strpos( $filename, '.webp' ) ) {
+    	$types['ext'] = 'webp';
+   		$types['type'] = 'image/webp';
+	}
+	return $types;
+}
