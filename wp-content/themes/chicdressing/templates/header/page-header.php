@@ -36,7 +36,8 @@
 
 				<?php endif; ?>
 
-				<p class="site-description"><?php echo bloginfo( 'description' ); ?></p>
+				<!-- NF : Modification niveau p en titre -->
+				<h1 class="site-description"><?php echo bloginfo( 'description' ); ?></h1>
 
 			</div>
 		</div>

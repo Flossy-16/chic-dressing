@@ -11,8 +11,9 @@
 	// Blog Grid
 	echo '<ul class="blog-grid">';
 	// On ajoute un titre à la section blog
-	/*NF : Modification d titre en h2*/
-	echo '<h2 id="leblog" class="chic-title">Dernières publications </h2>';
+		// NF : Modification niveau titre et ajout sous-titre
+	echo '<p id="leblog" class="chic-title">Dernières publications</p>';
+	echo '<h2 class="chic-subtitle">Nos derniers articles sur la mode de luxe de seconde main</h2>';
 
 	if ( have_posts() ) :
 

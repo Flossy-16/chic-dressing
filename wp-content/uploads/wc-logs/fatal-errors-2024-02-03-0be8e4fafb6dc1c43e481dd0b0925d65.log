@@ -1,0 +1,36 @@
+2024-02-03T18:34:08+00:00 CRITICAL Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 D:\neveu\Projets sites\chic-dressing\wp-includes\class-wp-hook.php(324): init_wysija_cron('')
+#7 D:\neveu\Projets sites\chic-dressing\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 D:\neveu\Projets sites\chic-dressing\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\neveu\Projets sites\chic-dressing\wp-settings.php(643): do_action('init')
+#10 D:\neveu\Projets sites\chic-dressing\wp-config.php(101): require_once('D:\\neveu\\Projet...')
+#11 D:\neveu\Projets sites\chic-dressing\wp-load.php(50): require_once('D:\\neveu\\Projet...')
+#12 D:\neveu\Projets sites\chic-dressing\wp-cron.php(46): require_once('D:\\neveu\\Projet...')
+#13 {main}
+  thrown dans D:\neveu\Projets sites\chic-dressing\wp-content\plugins\wysija-newsletters\helpers\file.php à la ligne 161
+
+2024-02-03T22:07:48+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 6
+
+2024-02-03T22:17:12+00:00 CRITICAL syntax error, unexpected identifier "chic", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 11
+
+2024-02-03T22:17:16+00:00 CRITICAL syntax error, unexpected identifier "chic", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 11
+
+2024-02-03T22:17:50+00:00 CRITICAL syntax error, unexpected token "if", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 14
+
+2024-02-03T22:17:54+00:00 CRITICAL syntax error, unexpected token "if", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 14
+
+2024-02-03T22:17:56+00:00 CRITICAL syntax error, unexpected token "if", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 14
+
+2024-02-03T22:18:26+00:00 CRITICAL syntax error, unexpected token "if", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 14
+
+2024-02-03T22:18:28+00:00 CRITICAL syntax error, unexpected token "if", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 14
+
+2024-02-03T22:18:48+00:00 CRITICAL syntax error, unexpected token "if", expecting "," or ";" dans D:\neveu\Projets sites\chic-dressing\wp-content\themes\chicdressing\index.php à la ligne 14
+

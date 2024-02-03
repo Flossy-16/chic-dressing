@@ -87,7 +87,7 @@ Text Domain:	 chicdressing
 
 body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
     color: #a5a5a5;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -116,9 +116,11 @@ body .header-logo a{
 #featured-slider{
     margin-bottom:30px;
 }
+
 #chic-products{
     padding:0 40px;
 }
+
 .chic-title{
     font-family: 'Kalam';
     font-size: 52px;
@@ -130,7 +132,32 @@ body .header-logo a{
     color: #9d4c64 !important;
     line-height: 48px;
 }
+
 #chic-products ul.products li.product{
     background: #f6f6f6;
     padding-bottom: 20px;
+}
+
+/* Ajout de CSS */
+.chic-subtitle{
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    text-align:center;
+    color: #333333;
+    margin:30px 40px;
+}
+
+.site-description{
+    font-family: 'Kalam';
+    font-size: 30px;
+    text-shadow: 2px 3px 5px #d0527a;
+    margin-top: 60px;
+}
+
+p{
+    color: #464646;
+}
+
+.slider-content p{
+    color:#ffffff;
 }
